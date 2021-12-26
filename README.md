@@ -1,5 +1,6 @@
 # Create-and-Manage-Cloud-Resources-Challenge-Lab
 #################################################################################
+
 Task 1: Create a project jumphost instance
 
 gcloud compute instances create nucleus-jumphost \
@@ -15,6 +16,7 @@ gcloud compute instances create nucleus-jumphost \
   --image-project debian-cloud
   
 #################################################################################
+
 Task 2: Create a Kubernetes service cluster
   
 gcloud container clusters create nucleus-backend \
@@ -46,6 +48,7 @@ kubectl expose deployment hello-server \
 --port 8080
 
 ##################################################################################
+
 Task 3: Set up an HTTP load balancer
 
 cat << EOF > startup.sh
